@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>테이블 작성 실습</title>
+<style>
+body{ font:12px/1.5 '돋움',Dotum,sans-serif; }
+h1{ font-size:1em; }
+table{
+    width:400px;
+    border-spacing:3px;
+    margin:0 auto;
+}
+table th{
+    background-color:#6f93ff;
+    color:white;
+}
+table td{
+    background-color:#d9e3ff;
+    text-align:center;
+}
+table tr:last-child td{
+    background-color:#e9e9e9;
+}
+</style>
+</head>
+
+<body>
+<h1>테이블 작성 실습</h1>
+<hr>
+<table>
+    <tr>
+        <th>판매실적</th>
+        <th>전반기</th>
+        <th>하반기</th>
+    </tr>
+    <tr>
+        <td rowspan="2">총<br>판매금액</td>
+        <td>5,000</td>
+        <td>7,000</td>
+    </tr>
+    <tr>
+        <td colspan="2">12,000</td>
+    </tr>
+</table>
+</body>
+</html>
